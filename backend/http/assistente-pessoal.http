@@ -1,0 +1,7 @@
+POST https://igorbarcelo.app.n8n.cloud/webhook/assistente-pessoal
+Content-Type: application/json 
+
+{
+    "chatId": "12344",
+    "message": "ele trabalha com react?"
+}
