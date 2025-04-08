@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Principal tecnologias={tecnologias.destaques}/>
+      <Principal tecnologias={tecnologias.destaques} />
       <Container className="py-11 flex flex-col items-center gap-2">
         <Projetos titulo="Destaque" lista={projetos.destaques} />
         <Projetos titulo="Web" lista={projetos.web} />
@@ -19,7 +19,7 @@ export default async function Home() {
         <Projetos titulo="Jogos" lista={projetos.jogo} />
         <Curriculo tecnologias={tecnologias.todas} />
         <div>
-                </div>
+        </div>
       </Container>
     </div>)
 }
