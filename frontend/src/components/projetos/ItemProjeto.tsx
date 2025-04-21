@@ -14,7 +14,7 @@ export default function ItemProjeto(props: ItemProjetoProps) {
                 relative  overflow-hidden border border-zinc-800
                 min-w-64 min-h-64
             "
-            >
+            >   
                 <Image
                     src={props.projeto.imagens[0]}
                     alt={props.projeto.nome}
@@ -22,6 +22,7 @@ export default function ItemProjeto(props: ItemProjetoProps) {
                     objectFit="object-cover"
                 />
             </div>
+            <div className=" text-[18px] font-bold text-teal-500 text-center">{props.projeto.nome}</div> 
         </Link>
     )
 }
