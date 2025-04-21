@@ -1,5 +1,4 @@
 export enum Tipo {
-    JOGO = "jogo",
+    DESKTOP = "desktop",
     WEB = "web",
-    MOBILE = "mobile",
 }

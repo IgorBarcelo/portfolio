@@ -10,7 +10,7 @@ export default function TecnologiasTrabalhadas(props: TecnologiasTrabalhadasProp
             <div className="flex justify-center gap-x-3 flex-wrap">
                 {props.lista.map((tecnologia) => (
                     <div key={tecnologia.id}>
-                        <span className="text-violet-800 font-bold">#</span>
+                        <span className="text-teal-500 font-bold">#</span>
                         <span>{tecnologia.nome}</span>
                     </div>
                 ))}

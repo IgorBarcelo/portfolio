@@ -17,7 +17,7 @@ export default function Cabecalho() {
                     <Link
                         href="https://www.linkedin.com/in/igor-barcelo-631010216/"
                         target="_blank"
-                        className="bg-red-500 rounded-full px-7 py-1 text-sm font-bold"
+                        className="bg-teal-500 hover:bg-teal-800 rounded-full px-7 py-1 text-sm font-bold"
                     >
                         Perfil
                     </Link>

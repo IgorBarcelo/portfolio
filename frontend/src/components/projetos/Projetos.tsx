@@ -9,7 +9,7 @@ export interface ProjetoProps {
 
 export default function Projetos(props: ProjetoProps) {
     return (
-        <div className="flex flex-col items-center sm:items-start w-7/10 md:w-11/12 lg:w-9/10 xl:w-full gap-5">
+        <div className="flex flex-col items-center sm:items-start w-7/10 md:w-11/12 xl:w-9/10 gap-2">
             <h3 className="text-2xl font-bold text-white/70">{props.titulo}</h3>
             <Carousel
                 opts={{

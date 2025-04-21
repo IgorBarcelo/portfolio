@@ -3,18 +3,21 @@ import Image from "next/image"
 
 export interface TecnologiasProps {
     lista: Tecnologia[]
+    tamanhoMenor?: boolean
 }
 
 export default function Tecnologias(props: TecnologiasProps) {
     return props.lista ? (
-        <div className="
+        <div className={`
             flex justify-center gap-4 
-            border border-zinc-800 rounded-xl p-2 bg-zinc-900/80 
-            hover:bg-zinc-800 transition duration-200 ease-in-out 
-            flex-wrap">
+            flex-wrap
+            ${!props.tamanhoMenor && "rounded-3xl p-2 bg-zinc-900/40 hover:bg-zinc-800 transition duration-200 ease-in-outh-24"}`}>
             {props.lista.map((tecnologia) => (
                 <div key={tecnologia.id} className="flex flex-col items-center gap-1">
-                    <span className="relative h-11 w-11 sm:h-16 sm:w16 rounded-xl overflow-hidden">
+                    <span className={`
+                        relative h-11 w-11  rounded-xl overflow-hidden
+                        ${!props.tamanhoMenor && "sm:h-16 sm:w16"}
+                        `}>
                         <Image src={tecnologia.imagem} alt={tecnologia.nome} fill className="object-contain"/>
                     </span>
                     <span className="text-[10px] text-zinc-400">{tecnologia.nome}</span>

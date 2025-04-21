@@ -7,14 +7,11 @@ export async function obterProjetos() {
 
     return {
         todos: projetos,
-        get mobile() {
-            return projetos.filter((projeto) => projeto.tipo === Tipo.MOBILE)
-        },
         get web() {
             return projetos.filter((projeto) => projeto.tipo === Tipo.WEB)
         },
-        get jogo() {
-            return projetos.filter((projeto) => projeto.tipo === Tipo.JOGO)
+        get desktop() {
+            return projetos.filter((projeto) => projeto.tipo === Tipo.DESKTOP)
         },
         get destaques() {
             return projetos.filter((projeto) => projeto.destaque)
