@@ -1,4 +1,4 @@
-# 💼 Portfólio – Igor Barcel
+# 💼 Portfólio – Igor Barcelo
 Este é o repositório do meu portfólio profissional, desenvolvido com uma stack moderna full-stack:
 
 - **Frontend:** Next.js, Tailwind CSS, TypeScript, ESLint
@@ -90,8 +90,8 @@ npm run dev
 
 ## 🌐 Deploy
 
-- **Fronted:** Hospedado no [Netlify](https://www.netlifycom/)
-- **Backed:** Hospedado no [Render](https://rendercom/)
+- **Fronted:** Hospedado no [Netlify](https://www.netlify.com/)
+- **Backed:** Hospedado no [Render](https://render.com/)
 
 ---
 
