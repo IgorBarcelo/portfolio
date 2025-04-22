@@ -12,7 +12,7 @@ export default function ItemProjeto(props: ItemProjetoProps) {
         <Link href={`/projeto/${props.projeto.id}`} className="flex flex-col gap-2 bg-white/10 rounded-3xl p-4 hover:bg-white/20 transition-all duration-300">
             <div className="
                 relative  overflow-hidden border border-zinc-800
-                min-w-60 min-h-64
+                min-w-52 min-h-64
             "
             >   
                 <Image
