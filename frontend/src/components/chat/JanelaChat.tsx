@@ -1,7 +1,7 @@
 "use client"
 import { IconReload, IconMessages, IconSend } from "@tabler/icons-react";
 import useChat from "@/hooks/useChat";
-import { useEffect, useRef, useState } from "react";
+import { KeyboardEvent, ChangeEvent, useEffect, useRef, useState } from "react";
 import BalaoMensagem from "./BalaoMensagem";
 import Image from "next/image";
 
@@ -50,10 +50,10 @@ export default function BotaoChat() {
                     type="text" 
                     value={texto} 
                     className="flex-1 border-3 rounded-2xl outline-none pl-3 bg-white"
-                    onChange={(e: any) => {
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => {
                         setTexto(e.target.value)
                     }}
-                    onKeyDown={(e: any) => {
+                    onKeyDown={(e: KeyboardEvent<HTMLInputElement>) => {
                         if (e.key === "Enter") enviarMensagem()
                     }}  
                 />
