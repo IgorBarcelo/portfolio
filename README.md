@@ -9,6 +9,9 @@ Este é o repositório do meu portfólio profissional, desenvolvido com uma stac
 🔗 Acesse: [portib.netlify.app](https://portib.netlify.app)
 
 ---
+## 📸 Demonstração
+
+![Demo](https://github.com/IgorBarcelo/portfolio/blob/main/public/demo.png?raw=true)
 
 ## ✨ Funcionalidades
 
