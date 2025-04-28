@@ -18,7 +18,7 @@ model Tecnologia {
   id Int @id @default(autoincrement())
   nome String
   descricao String
-  imagem String
+  imagem String[]
   destaque Boolean @default(false)
   projetos Projeto[]
 
