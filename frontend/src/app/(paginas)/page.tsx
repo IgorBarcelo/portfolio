@@ -10,9 +10,12 @@ export default async function Home() {
   const projetos = await obterProjetos()
 
   return (
-    <div>
+    <div className="
+      relative h-199 bg-[url('/principal.gif')] bg-cover bg-center before:content-[''] before:absolute before:inset-0 
+      before:bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,oklch(0.141_0.005_285.823)_100%)] 
+      ">
       <Principal tecnologias={tecnologias.destaques} />
-      <Container className="py-11 flex flex-col items-center gap-7">
+      <Container className="relative py-11 flex flex-col items-center gap-7">
         <Projetos titulo="Destaque" lista={projetos.destaques} />
         <Projetos titulo="Web" lista={projetos.web} />
         <Projetos titulo="Desktop" lista={projetos.desktop} />

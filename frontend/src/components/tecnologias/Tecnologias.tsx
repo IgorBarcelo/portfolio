@@ -14,8 +14,8 @@ function TecnologiaItem({ tecnologia, tamanhoMenor }: { tecnologia: Tecnologia, 
     return (
         <div className="flex flex-col items-center gap-1">
             <span className={`
-                relative h-22 w-25 rounded-xl overflow-hidden
-                ${!tamanhoMenor && "sm:h-16 sm:w-16"}
+                relative  rounded-xl overflow-hidden
+                ${tamanhoMenor ? "h-8 w-16 sm:h-12 sm:w-18" : "h-8 w-14 sm:h-10 sm:w-16"}
             `}>
                 <Image 
                     src={src} 
@@ -34,6 +34,7 @@ export default function Tecnologias(props: TecnologiasProps) {
     return props.lista ? (
         <div className="flex justify-center gap-4 flex-wrap">
             {props.lista.map((tecnologia) => (
+                console.log("###",props.tamanhoMenor),
                 <TecnologiaItem 
                     key={tecnologia.id} 
                     tecnologia={tecnologia} 
