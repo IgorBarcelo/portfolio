@@ -34,7 +34,6 @@ export default function Tecnologias(props: TecnologiasProps) {
     return props.lista ? (
         <div className="flex justify-center gap-4 flex-wrap">
             {props.lista.map((tecnologia) => (
-                console.log("###",props.tamanhoMenor),
                 <TecnologiaItem 
                     key={tecnologia.id} 
                     tecnologia={tecnologia} 
